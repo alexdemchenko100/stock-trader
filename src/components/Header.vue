@@ -40,6 +40,7 @@
       border-style: solid;
       border-width: thin;
       border-color: #e8dede;
+      margin-bottom: 20px;
     }
 
     .nav-pills .nav-link {
