@@ -10,7 +10,6 @@
           <input
             class="form-control"
             placeholder="Quantity"
-            type="number"
             v-model="quantity"
           >
         </div>
@@ -18,6 +17,7 @@
           <button
             class="btn btn-success"
             @click="buyStock"
+            :disabled="quantity <= 0 || !Number.isInteger(+quantity)"
           >Buy</button>
         </div>
       </div>
@@ -30,7 +30,7 @@
     props: ['stock'],
     data () {
       return {
-        quantity: 0
+          quantity: 0
       }
     },
     methods: {
