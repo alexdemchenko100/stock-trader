@@ -3,7 +3,7 @@
     <div class="card border-success mb-3" >
       <div class="card-header ">
         {{ stock.name }}
-        <smal>(Price: {{ stock.price }})</smal>
+        <small>(Price: {{ stock.price }})</small>
       </div>
       <div class="card-body text-success">
         <div class="float-left">
@@ -40,7 +40,7 @@
           stockPrice: this.stock.price,
           quantity: this.quantity
         }
-        console.log(order)
+        this.$store.dispatch('buyStock', order)
         this.quantity = 0
       }
     }
