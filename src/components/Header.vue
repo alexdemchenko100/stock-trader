@@ -25,8 +25,8 @@
               <li><a class="nav-link" href="#">Load Data</a></li>
             </ul>
           </li>
+          <li class="nav-item navbar-text"> Funds: {{ funds }}</li>
         </ul>
-
       </div>
     </div>
   </nav>
@@ -53,3 +53,13 @@
     background-color: #e8dede;
   }
 </style>
+
+<script>
+  export default {
+    computed: {
+      funds() {
+        return this.$store.getters.funds
+      }
+    }
+  }
+</script>
