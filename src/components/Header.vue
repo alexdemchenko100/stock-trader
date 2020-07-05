@@ -25,8 +25,8 @@
               <li><a class="nav-link" href="#">Load Data</a></li>
             </ul>
           </li>
-          <li class="nav-item navbar-text"> Funds: {{ funds }}</li>
         </ul>
+        <strong class="nav-item navbar-text navbar-right">Funds: {{ funds }}</strong>
       </div>
     </div>
   </nav>
@@ -52,6 +52,7 @@
   .active {
     background-color: #e8dede;
   }
+
 </style>
 
 <script>
