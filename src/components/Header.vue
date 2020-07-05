@@ -26,7 +26,7 @@
             </ul>
           </li>
         </ul>
-        <strong class="nav-item navbar-text navbar-right">Funds: {{ funds }}</strong>
+        <strong class="nav-item navbar-text navbar-right">Funds: {{ funds | currency }}</strong>
       </div>
     </div>
   </nav>
